@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/profilePic"
+            android:background="@color/shimmerbackground"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <View
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            tools:text="Celia Marshall"
+            android:background="@color/shimmerbackground"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/profilePic"
+            android:layout_toStartOf="@id/postSettings"
+            android:layout_marginEnd="5dp" />
+
+        <View
+            android:id="@+id/profession"
+            android:background="@color/shimmerbackground"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/postSettings"
+            android:layout_height="5dp"
+            android:layout_below="@id/name"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/profilePic"
+            tools:text="UI UX Designer" />
+
+        <View
+            android:id="@+id/postSettings"
+            android:background="@color/shimmerbackground"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp" />
+
+
+        <View
+            android:id="@+id/shareThoughts"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/shimmerbackground"
+            android:layout_below="@id/profilePic"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="7dp"
+            android:gravity="top"
+            android:textStyle="bold"
+            android:textCursorDrawable="@null"
+            android:textColor="@android:color/black"
+            android:hint="Share your thoughts, ideas, image and videos"
+            android:textSize="14sp" />
+
+
+        <View
+            android:id="@+id/picture"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/shareThoughts"
+            android:background="@color/shimmerbackground"
+            android:textStyle="bold"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false" />
+
+        <View
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@id/shareThoughts"
+            android:layout_toEndOf="@id/picture"
+            android:background="@color/shimmerbackground"
+            android:text="Video"
+            android:textStyle="bold"
+            style="?android:attr/borderlessButtonStyle"
+            android:textAllCaps="false" />
+
+
+        <View
+            android:id="@+id/postButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/shareThoughts"
+            android:textStyle="bold"
+            android:background="@color/shimmerbackground"
+            android:text="POST" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

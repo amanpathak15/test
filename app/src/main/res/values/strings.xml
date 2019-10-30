@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">Mind Warrior</string>
+
+    //Regular Expression
+    <string name="regex_emailAddress">[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.+[a-zA-Z]+</string>
+    <string name="regex_passwordNumber">^(?=.*[0-9])(?=.*[a-zA-Z])(?=\\S+$).{6,12}$</string>
+    <string name="regex_phoneNumber">^(0/91)?[7-9][0-9]{9}$</string>
+    <string name="regex_date">(0?[1-9]|1[012]) [/.-] (0?[1-9]|[12][0-9]|3[01]) [/.-] ((19|20)\\d\\d)</string>
+    <string name="home">Home</string>
+
+    <string name="profile_name">Profile</string>
+
+    <string name="settings">Settings</string>
+
+    <string name="about_us">About Us</string>
+
+    <string name="contact_us">Contact Us</string>
+
+    <string name="logout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">Profile</string>
+    <string name="phone_no">Phone No</string>
+    <string name="country">Country</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="buy_package">Buy Packages</string>
+    <string name="change_password">Change Password</string>
+    <string name="rate_on_google_play">Rate on Google Play</string>
+    <string name="share_app">Share App</string>
+    <string name="support_mindwarriorhack_com">support@mindwarriorhack.com</string>
+    <string name="about_us_email">Email</string>
+    <string name="subject">Subject</string>
+    <string name="description">Description</string>
+    <string name="send">Send</string>
+    <string name="settings_activity">Settings</string>
+    <string name="change_password_activity">Change Password</string>
+    <string name="existing_password">Existing Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="packages">Packages</string>
+    <string name="add_more_packages">Add More Packages</string>
+    <string name="proceed">Proceed</string>
+    <string name="purchase_activity">Purchase</string>
+    <string name="select_country">Select Country</string>
+    <string name="System_OS">Android</string>
+    <string name="buy_now_popup">Buy now</string>
+    <string name="save_popup">Save</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="credit_debit_card">Credit/Debit Card</string>
+    <string name="paypal">PayPal</string>
+    <string name="applepay">ApplePay</string>
+    <string name="title_dynamic_feature">Module Title</string>
+    <string name="becoming_self_aware">Becoming Self Aware</string>
+    <string name="like">Like</string>
+    <string name="stripe">Stripe</string>
+    <string name="stripe_payment">Card Details</string>
+    <string name="payment">Payment</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email_sign_in">Email</string>
+    <string name="password_sign_in">Password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="or_create_an_account">Or Create An Account</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_email_address">Enter email address</string>
+    <string name="enter_country">Enter Country</string>
+    <string name="enter_phone_no">Enter Phone No</string>
+    <string name="save">Save</string>
+    <string name="watched">Watched</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="pay">Pay</string>
+    <string name="you_have_not_purchase">To purchase this level please click subscribe button below</string>
+    <string name="forget_password_instructions">Instructions to reset your password will be sent to your registered email address.</string>
+    <string name="paymentstatusIssueMessage">We are facing issues while processing the orders.Sorry for inconvenience, will fix this soon. Incase if the subscribed level is not available to view, please try after sometime.</string>
+    <string name="live_publishable_key">pk_live_Or7amL9cmCmAe7ORQFzGbzat00vUBpC6rQ</string>
+    <string name="test_publishable_key">pk_test_LeZP22jwCq8e1zLe7bTZuNL700OdALbrLP</string>
+    <string name="redirect_url">mindwarrior://post-authentication-return-screen</string>
+    <string name="redeem">Redeem</string>
+    <string name="notification">Notification</string>
+    <string name="notifications">Notifications</string>
+    <string name="gender">Gender</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="occupation">Occupation</string>
+    <string name="sr_designer">Sr.Designer</string>
+    <string name="_06_jan_2019">06 Jan 2019</string>
+    <string name="select_birth_date">Select birth date</string>
+    <string name="enter_occupation">Enter Occupation</string>
+    <string name="skip">Skip</string>
+    <string name="walkthrough_one_text">Future-proof your employability skills one thought at a time</string>
+    <string name="walkthrough_two_text">Upgrade your mind in just a minute a day with daily mind hacks</string>
+    <string name="walkthrough_three_text"><![CDATA[Share your thoughts & feelings with our community]]></string>
+    <string name="socialFeeds">Social Feeds</string>
+    <string name="comment_title">Comments</string>
+    <string name="like_title">Likes</string>
+    <string name="see_more_text"></string>
+    <string name="see_less_text">See More</string>
+    //Rating
+    <string name="poor">Poor</string>
+    <string name="bad">Bad</string>
+    <string name="ok">OK</string>
+    <string name="good">Good</string>
+    <string name="awesome">Awesome</string>
+
+    //Terms and Conditions
+    <string name="terms_condition_formatted_text">"
+    These Terms and Conditions ("Terms", "Terms and Conditions") govern your relationship with https://www.mindwarriorxp.com website and Mind Warrior XP App (the "Service") operated by Mind Warrior XP ("us", "we", or "our").
+
+Please read these Terms and Conditions carefully before using the Service.
+
+Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
+
+By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.
+
+Accounts
+
+When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.
+
+You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.
+
+You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.
+
+You may not use as a username the name of another person or entity or that is not lawfully available for use, a name or trade mark that is subject to any rights of another person or entity other than you without appropriate authorization, or a name that is otherwise offensive, vulgar or obscene.
+
+Intellectual Property
+
+The Service and its original content, features and functionality are and will remain the exclusive property of Fi Hills Ltd trading as Mind Warrior XP and its licensors. The Service is protected by copyright, trademark, and other laws of both the United States and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Fi Hills Ltd trading as Mind Warrior XP.
+
+Links To Other Web Sites
+
+Our Service may contain links to third-party web sites or services that are not owned or controlled by Fi Hills Ltd.
+
+Fi Hills Ltd has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party web sites or services. You further acknowledge and agree that Fi Hills Ltd shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.
+
+We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.
+
+Termination
+
+We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.
+
+Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.
+
+Limitation Of Liability
+
+In no event shall Fi Hills Ltd, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Service; (ii) any conduct or content of any third party on the Service; (iii) any content obtained from the Service; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
+
+Disclaimer
+
+Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance.
+
+Fi Hills Ltd its subsidiaries, affiliates, and its licensors do not warrant that a) the Service will function uninterrupted, secure or available at any particular time or location; b) any errors or defects will be corrected; c) the Service is free of viruses or other harmful components; or d) the results of using the Service will meet your requirements.
+
+Governing Law
+
+These Terms shall be governed and construed in accordance with the laws of Florida, United States, without regard to its conflict of law provisions.
+
+Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.
+
+Changes
+
+We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days’ notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
+
+By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.
+
+Contact Us
+
+If you have any questions about these Terms, please contact us."
+</string>
+
+</resources>

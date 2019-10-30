@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "778564995400",
+    "firebase_url": "https://mind-warrior-hack.firebaseio.com",
+    "project_id": "mind-warrior-hack",
+    "storage_bucket": "mind-warrior-hack.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778564995400:android:bbc3715057f7aaf4",
+        "android_client_info": {
+          "package_name": "com.mindwarriorhack.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778564995400-39sq1kuht58uhh4k7lnel3o77eusdqnm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5599BIY8ccH4Yg7yDh2IcMPdG_dcGd5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778564995400-39sq1kuht58uhh4k7lnel3o77eusdqnm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

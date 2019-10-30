@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_effect"
+    >
+
+    <ImageView
+        android:id="@+id/videoThumbnail"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/videoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="38dp"
+        android:layout_toEndOf="@id/videoThumbnail"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="18sp"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        tools:hint="Becoming" />
+
+    <TextView
+        android:id="@+id/videoDuration"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoTitle"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/videoThumbnail"
+        android:textSize="18sp"
+        tools:hint="10:30" />
+
+    <TextView
+        android:id="@+id/videoWatched"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/videoTitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/videoDuration"
+        android:background="@drawable/watched"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="@string/watched"
+        android:textColor="#818080"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/videoLiked"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/videoDuration"
+        android:src="@drawable/like"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@id/videoThumbnail"
+        android:textAllCaps="false"
+        android:textColor="#eceaea"
+        android:textSize="15sp"
+        tools:ignore="RtlSymmetry" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/videoThumbnail"
+        android:layout_marginTop="15dp"
+        android:background="#cccaca" />
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    <group
+            android:id="@+id/group1"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/icons_home"
+                android:title="@string/home" />
+        </group>
+        <group
+            android:id="@+id/group2"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_profile"
+                android:checked="true"
+                android:icon="@drawable/icons_user"
+                android:title="@string/profile" />
+        </group>
+
+        <group
+            android:id="@+id/group3"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/icons_settings"
+                android:title="@string/settings" />
+        </group>
+        <group
+            android:id="@+id/group4"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/icons_level_info"
+                android:title="@string/about_us" />
+        </group>
+        <group
+            android:id="@+id/group5"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/icons_contact_card"
+                android:title="@string/contact_us" />
+        </group>
+        <group
+            android:id="@+id/group6"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/icons_import"
+                android:title="@string/logout" />
+        </group>
+        <group android:id="@+id/group7">
+            <item android:title="" />
+        </group>-->
+
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/icons_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_socialfeeds"
+            android:icon="@drawable/socialfeeds_icon"
+            android:title="@string/socialFeeds"
+            />
+        <item
+            android:id="@+id/nav_profile"
+            android:checked="true"
+            android:icon="@drawable/icons_user"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_noti"
+            android:icon="@drawable/icons_notification"
+            android:title="@string/notification"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/icons_settings"
+            android:title="@string/settings" />
+       <!-- <item
+            android:id="@+id/nav_redeem"
+            android:icon="@drawable/icon_redeem"
+            android:title="@string/redeem"/>-->
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/icons_side_info"
+            android:title="@string/about_us" />
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/icons_contact_card"
+            android:title="@string/contact_us" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/icons_import"
+            android:title="@string/logout" />
+
+
+    </group>
+
+</menu>

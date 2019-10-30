@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/paid_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="12dp"
+    tools:ignore="UnusedAttribute">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="0dp">
+
+        <TextView
+            android:id="@+id/types"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:background="@drawable/textview_green_tablet"
+            android:elevation="10dp"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry"
+            tools:text="£9.99" />
+
+        <ImageView
+            android:id="@+id/level_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/info_icon" />
+
+
+        <ImageView
+            android:id="@+id/levelLogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@id/types"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop" />
+
+
+        <TextView
+            android:id="@+id/levelTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:layout_below="@id/levelLogo"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="22sp"
+            tools:text="Embed Cognitive Flexibility" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

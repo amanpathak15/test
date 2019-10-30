@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@android:color/black">
+
+        <ImageView
+            android:id="@+id/backPostDetailed"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/icon_back" />
+
+        <!-- <TextView
+             android:id="@+id/toolbarCommentScreenText"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             tools:text="Nancy's post"
+             android:textAlignment="center"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:textColor="@android:color/white"
+             android:textSize="20sp"
+             android:textStyle="bold" />-->
+
+    </RelativeLayout>
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/imageViewDetailed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:layout_below="@id/toolbar" />
+
+    <TextView
+        android:id="@+id/textMessage"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scrollbars="vertical"
+        android:layout_margin="20dp"
+        android:layout_below="@id/imageViewDetailed"
+        android:textColor="#CED4DE"
+        android:textSize="18sp"
+        android:justificationMode="inter_word"
+        android:scrollbarTrackVertical="@drawable/scrollbar_vertical"
+        android:background="@android:color/transparent"
+        tools:targetApi="o" />
+
+</RelativeLayout>

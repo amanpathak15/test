@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Layout to contain contents of main body of screen (drawer will slide over this) -->
+    <include
+        layout="@layout/content_home"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:ignore="ScrollViewSize" />
+
+
+    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:itemIconTint="#1760AC"
+        android:background="#ffffff"
+        android:scrollbars="vertical"
+        app:theme="@style/NavigationTheme"
+        app:itemBackground="@drawable/navigation_drawer_selection"
+        app:itemTextColor="#afadad"
+        app:menu="@menu/drawer_view" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

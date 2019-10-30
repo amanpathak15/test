@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e9effc"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="800dp" />
+
+            <TextView
+                android:id="@+id/skip_text"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:text="@string/skip"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@id/skip_text"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/mindwarrior_walkthrough_logo" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bottom_walkthough_text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/content_text_walkthrough"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="-50dp"
+            android:gravity="center"
+            android:maxLines="3"
+            android:textColor="#546468"
+            android:textSize="30sp"
+            tools:text="Hello Hello Hello Hello Hello Hello Hello Hello Hello" />
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/spring_dot_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            app:piv_selectedColor="#F3970A"
+            app:piv_unselectedColor="#CED4DE" />
+    </RelativeLayout>
+
+</LinearLayout>

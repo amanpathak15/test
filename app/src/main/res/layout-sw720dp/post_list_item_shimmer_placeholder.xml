@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:padding="10dp">
+
+        <View
+            android:id="@+id/profilePic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/shimmerbackground"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/profilePic"
+            android:background="@color/shimmerbackground" />
+
+        <View
+            android:id="@+id/profession"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/name"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@id/profilePic"
+            android:background="@color/shimmerbackground"
+            tools:text="Celia Marshall" />
+
+        <View
+            android:id="@+id/dateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_toEndOf="@id/profession"
+            android:background="@color/shimmerbackground" />
+
+
+        <View
+            android:id="@+id/optionMenu"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="2dp"
+            android:background="@color/shimmerbackground" />
+
+        <View
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@id/profilePic"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/shimmerbackground" />
+
+        <View
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_below="@id/text"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/shimmerbackground" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

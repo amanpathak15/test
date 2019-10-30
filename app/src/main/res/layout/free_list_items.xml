@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/free_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="0dp"
+        android:paddingBottom="8dp">
+
+
+        <TextView
+            android:id="@+id/types"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/purchased_tag"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            tools:text="Free" />
+
+        <ImageView
+            android:id="@+id/level_info"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:paddingTop="15dp"
+            android:layout_marginEnd="18dp"
+            android:paddingStart="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/info_icon" />
+
+
+        <ImageView
+            android:id="@+id/levelLogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/types"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop" />
+
+
+        <TextView
+            android:id="@+id/levelTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/levelLogo"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            tools:text="Becoming Self Aware" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+

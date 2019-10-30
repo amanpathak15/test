@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    android:fitsSystemWindows="false"
+    tools:context=".view.SignUp.SignUp">
+
+    <RelativeLayout
+        android:id="@+id/toolbarChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginTop="15dp">
+
+        <!--Drawable is left-->
+        <ImageView
+            android:id="@+id/backSignUp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/icon_back" />
+
+
+        <TextView
+            android:id="@+id/toolbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Sign Up"
+            android:paddingBottom="3dp"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/profImg"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/toolbarChangePassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/imgview"
+        android:scaleType="centerInside"
+        android:src="@drawable/usericon" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profImg"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp">
+
+        <EditText
+            android:id="@+id/userEditName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/edittext"
+            android:hint="Name"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:clickable="true"
+            android:editable="false"
+            android:textColorHint="#6b6a6a"
+            android:textSize="18sp"
+            android:focusable="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@+id/userEditName"
+            android:layout_alignParentStart="true"
+            android:background="#d7d7d7" />
+
+        <EditText
+            android:id="@+id/userEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/userEditName"
+            android:background="@android:color/white"
+            android:hint="Email Address"
+            android:clickable="true"
+            android:importantForAutofill="no"
+            android:inputType="textWebEmailAddress"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="18sp"
+            android:textColorHint="#6b6a6a"
+            tools:targetApi="o"
+            tools:ignore="KeyboardInaccessibleWidget" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/userEmailAddress"
+            android:layout_alignParentStart="true"
+            android:background="#d7d7d7" />
+
+        <TextView
+            android:id="@+id/countrySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/userEmailAddress"
+            android:background="@android:color/white"
+            android:hint="@string/country"
+            android:textColorHint="#6b6a6a"
+            android:textColor="@android:color/black"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="18sp"
+            android:focusable="false"
+            tools:ignore="KeyboardInaccessibleWidget" />
+
+        <!--  <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+              android:id="@+id/countrySpinner"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:layout_below="@id/userEmailAddress"
+              android:background="@android:color/white"
+              app:SearchHintText="Please Select a Country"
+              app:RevealEmptyText="Country"
+              app:ShowBorders="false"
+              android:paddingStart="15dp"
+              android:paddingEnd="15dp"
+              >
+          </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+  -->
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_alignBottom="@id/countrySpinner"
+              android:layout_alignParentStart="true"
+              android:background="#d7d7d7" />
+
+          <EditText
+              android:id="@+id/userPassword"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:layout_below="@id/countrySpinner"
+              android:background="@android:color/white"
+              android:hint="Password"
+              android:clickable="true"
+              android:inputType="textWebPassword"
+              android:paddingStart="20dp"
+              android:paddingEnd="20dp"
+              android:paddingBottom="15dp"
+              android:paddingTop="15dp"
+              android:textColorHint="#6b6a6a"
+              android:textSize="18sp"
+              tools:ignore="KeyboardInaccessibleWidget" />
+
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:layout_alignBottom="@id/userPassword"
+              android:layout_alignParentStart="true"
+              android:background="#d7d7d7" />
+
+          <EditText
+              android:id="@+id/userConfirmPassword"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:layout_below="@id/userPassword"
+              android:background="@drawable/edittextpass"
+              android:hint="Confirm Password"
+              android:clickable="true"
+              android:inputType="textWebPassword"
+              android:paddingStart="20dp"
+              android:paddingTop="15dp"
+              android:paddingEnd="20dp"
+              android:paddingBottom="15dp"
+              android:textColorHint="#6b6a6a"
+              android:textSize="18sp"
+              tools:ignore="KeyboardInaccessibleWidget" />
+
+        <CheckBox
+            android:id="@+id/checkbox_tc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userConfirmPassword"
+            android:layout_marginTop="35dp"
+            android:buttonTint="@android:color/white"
+            />
+
+        <TextView
+            android:id="@+id/checkbox_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userConfirmPassword"
+            android:layout_toEndOf="@id/checkbox_tc"
+            android:layout_marginTop="40dp"
+            android:text="I agree to"
+            android:layout_marginStart="3dp"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+            android:id="@+id/terms_and_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userConfirmPassword"
+            android:layout_toEndOf="@id/checkbox_txt"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="3dp"
+            android:text="TERMS AND CONDITIONS"
+            android:textColor="@android:color/white"
+            />
+
+          <Button
+              android:id="@+id/btnSignUp"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:layout_below="@id/userConfirmPassword"
+              android:layout_marginTop="120dp"
+              android:background="@drawable/button_sign_in"
+              android:text="Sign Up"
+              android:textSize="18sp"
+              android:textAllCaps="false"
+              android:textColor="@android:color/white" />
+
+          <TextView
+              android:id="@+id/alreadyCreated"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/btnSignUp"
+              android:layout_marginTop="18dp"
+              android:gravity="center_horizontal"
+              android:text="Already Have An Account?"
+              android:textColor="@android:color/white"
+              android:textSize="18sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+      </RelativeLayout>
+  </RelativeLayout>

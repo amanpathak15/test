@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#EDF3FF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRedeem"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/backRedeem"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/toolbar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Redeem"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tag"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@id/toolbarRedeem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tag" />
+
+    <TextView
+        android:id="@+id/redeem_your_code_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tag"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="Redeem your code"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/redeem_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redeem_your_code_text"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/text_view"
+        android:hint="Enter code"
+        android:paddingStart="20dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColorHint="@android:color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/redeem_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redeem_code"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/button_sign_in"
+        android:text="Redeem Code"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tc_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redeem_button"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:text="By clicking on redeem code you agree to promotional code as applicable"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/terms_conditions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tc_text"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        tools:text="Terms and conditions"
+        android:textColor="@color/statusBarColor"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mindwarriorhack.app">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <compatible-screens>
+        <screen
+            android:screenDensity="ldpi"
+            android:screenSize="small" />
+        <screen
+            android:screenDensity="mdpi"
+            android:screenSize="normal" />
+        <screen
+            android:screenDensity="xhdpi"
+            android:screenSize="large" />
+        <screen
+            android:screenDensity="xxhdpi"
+            android:screenSize="xlarge" />
+    </compatible-screens>
+    <application
+        android:name=".MindWarriorApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+        tools:targetApi="m">
+        <activity
+            android:name=".view.Home.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".view.SignIn.SignIn"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator"/>
+        <activity
+            android:name=".view.SignUp.SignUp"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "https/http” -->
+                <data android:scheme="http" />
+                <data
+                    android:host="mindwarriorhacks.app/test"
+                    android:pathPrefix="/verify-email/NDE="
+                    android:scheme="https" />
+                <!-- note that the leading "/" is required for pathPrefix-->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.ForgotPassword.ForgotPassword"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".view.Settings.SettingsActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".view.ChangePassword.ChangePassword"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".view.Purchase.PurchaseActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+
+        <provider
+            android:name=".helper.AppFileProvider"
+            android:authorities="com.mindwarriorhack.app.helper.AppFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+
+        </provider>
+
+        <activity
+            android:name=".view.Payment.PaymentActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".view.VideoList.VideoListActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+
+        <activity
+            android:name=".StripePayment"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="post-authentication-return-screen"
+                    android:scheme="mindwarrior" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.VimeoPlayer.VimeoPlayerActivity"
+            android:screenOrientation="sensor" />
+        <!--<activity
+            android:name=".DeepLinkingActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <data android:host="mindwarriorhacks.app" />
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+                <data android:pathPattern=".*" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.ALTERNATIVE" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <action android:name="android.intent.action.MAIN" />
+                &lt;!&ndash; Accepts URIs that begin with "https” &ndash;&gt;
+                <data android:host="mindwarriorhacks.app" />
+                <data android:scheme="https" />
+                <data android:scheme="http" />
+                <data android:pathPattern=".*" />
+            </intent-filter>
+        </activity>-->
+        <activity
+            android:name=".view.PaymentStatusActivity.paymentStatusActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator"/>
+        <activity
+            android:name=".troubleshoot.TroubleShootActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.Redeem.Redeem"
+            android:screenOrientation="portrait" />
+        <activity android:name=".WalkthroughScreens"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".view.Notification.Notification"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name=".view.Notification.Notification" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.FeedLikeScreen.feedLikeScreen"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".view.rateThisVideo.rateThisVideoActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".view.FeedCommentScreen.feedCommentScreen" />
+        <activity android:name=".view.newPostScreen.newPostScreen" />
+        <activity android:name=".PostDetailedScreen" />
+        <activity android:name=".view.termsAndConditions.TermsAndConditions" />
+
+        <service
+            android:name=".firebase.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notify" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/notificationIconColor" />
+
+    </application>
+
+</manifest>

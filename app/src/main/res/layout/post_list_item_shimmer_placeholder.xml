@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    >
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:padding="10dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <View
+        android:id="@+id/profilePic"
+        android:background="@color/shimmerbackground"
+        android:scaleType="centerCrop"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+    <View
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="50dp"
+        android:background="@color/shimmerbackground"
+        android:layout_height="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@id/profilePic"
+    />
+
+    <View
+        android:id="@+id/profession"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@id/name"
+        android:background="@color/shimmerbackground"
+        android:layout_toEndOf="@id/profilePic"
+        tools:text="Celia Marshall" />
+    
+   <View
+       android:id="@+id/dateTime"
+       android:layout_below="@id/name"
+       android:background="@color/shimmerbackground"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_toEndOf="@id/profession" />
+    
+    
+
+    <View
+        android:id="@+id/optionMenu"
+        android:background="@color/shimmerbackground"
+        android:layout_marginEnd="2dp"
+        android:layout_alignParentEnd="true"
+        android:layout_width="10dp"
+        android:layout_height="10dp" />
+
+    <View
+        android:id="@+id/text"
+        android:layout_marginTop="10dp"
+        android:background="@color/shimmerbackground"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/profilePic"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <View
+        android:id="@+id/imageView"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/text"
+        android:background="@color/shimmerbackground"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

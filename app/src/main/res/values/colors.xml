@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1760AC</color>
+    <color name="colorPrimaryDark">#1760AC</color>
+    <color name="colorAccent">#1760AC</color>
+    <color name="statusBarColor">#1760AC</color>
+    <color name="darkBlueColor">#1A62AC</color>
+    <color name="textLikeColor">#1A63AD</color>
+
+    <color name="nav_menuItemSelection">#f2f4fa</color>
+    <color name="nav_menuItemWhite">#ffffff</color>
+    <!--<color name="greyColor">#dadada</color>-->
+    <color name="mainThemeColor">#26225D</color>
+    <color name="notificationIconColor">#2367AE</color>
+    <color name="shimmerbackground">#dddddd</color>
+    <color name="lightBlueBackground">#edf3ff</color>
+    <color name="lightBlue">#0094FF</color>
+
+    <color name="disabled_color">#3a666666</color>
+</resources>

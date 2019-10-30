@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/statusBarColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:datePickerDialogTheme">@style/DialogTheme</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+    </style>
+
+    <style name="NavigationTheme" parent="AppTheme"><!--phone screen-->
+        <item name="android:textSize">16sp</item>
+        <item name="listPreferredItemHeightSmall">60dp</item><!-- menu item height- vary as u need -->
+    </style>
+
+    <style name="NavigationThemeTablet" parent="AppTheme"><!--Ten inch tablet-->
+        <item name="listPreferredItemHeightSmall">85dp</item><!-- menu item height- vary as u need -->
+        <item name="android:textSize">22sp</item>
+    </style>
+
+
+    <style name="NavigationThemeSevenInchTablet" parent="AppTheme"><!--Seven inch tablet-->
+        <item name="listPreferredItemHeightSmall">75dp</item><!-- menu item height- vary as u need -->
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Theme.AppCompat.Light is not a dialog theme -->
+    <style name="DialogTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorAccent">@color/darkBlueColor</item>
+        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+    </style>
+
+    <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="android:headerBackground">@color/darkBlueColor</item>
+    </style>
+</resources>

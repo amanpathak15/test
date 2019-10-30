@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="25dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="25dp"
+    android:paddingBottom="40dp"
+    android:background="@drawable/bottom_walkthough_text"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/notification_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAppearance="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:textColor="#4D5E62"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:text="Pricing plans are updated" />
+
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#999FA8"
+            android:textSize="28sp"
+            tools:text="6 June, 2019 - 5:30 AM" />
+
+        <TextView
+            android:id="@+id/notification_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="#5D6D70"
+            android:textSize="28sp"
+            tools:text="when an unknown printer took a galley of type and scrambled it to make a type specimen book" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
