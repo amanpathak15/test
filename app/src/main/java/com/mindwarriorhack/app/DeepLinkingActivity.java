@@ -13,5 +13,6 @@ public class DeepLinkingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_deep_linking);
         String aa = "asss";
+        String ab = "dhhhh";
     }
 }
